@@ -1,0 +1,150 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    border: border-box;
+    background-color: hsla(0, 0%, 0%, 0.158);
+    
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 17%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.thecard {
+    position: absolute;
+    height: 200px;
+    width: 340px;
+    /* background-color: yellow; */
+    transform-style: preserve-3d;
+    transition: all 1.2s ease-in;
+    color: black;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront {
+    position: absolute;
+    height: 200px;
+    width: 340px;
+    background-color: black;
+    backface-visibility: hidden;
+    border: none;
+}
+.my-logo {
+    height: 200px;
+    width: 200px;
+    background-image: url(Systems\ and\ technology\ programming\ company\ logo\ \(2\).png);
+    background-size: cover;
+    /* border-radius: 100%; */
+    margin-left: 22%;
+}
+
+.theback {
+    position: absolute;
+    height: 200px;
+    width: 340px;
+    background-color: black;
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+    border: none;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-evenly; */
+}
+.part1{
+    /* border: 2px solid white; */
+    height: 200px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 0.5rem; */
+}
+.qr{
+    height: 120px;
+    width: 68px;
+    padding-top: 1rem;
+}
+.part2 {
+    font-family: calibri;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid white; */
+    color: white;
+    font-size: small;
+    /* margin-left: 20px;
+    margin-top: 10px; */
+
+}
+.details{
+    margin-top: 10px;
+    margin: 20px;
+}
+.image{
+    height: 100px;
+    width: 87px;
+    background-image: url(initial\ simple\ brand\ logo.gif);
+    background-size: cover;
+    /* padding-top: 2rem; */
+}
+.image2 {
+    height: 71px;
+    width: 71px;
+    background-image: url(saifullahsaeed-49ad6492-7272-43b5-b220-e1c51ae16366\ \(1\).png);
+    background-size: cover;
+    /* padding-top: 0.1rem; */
+}
+.contact{
+    width: 200px;
+    height: 70px;
+    /* border: 2px solid white; */
+    margin-top: 10px;
+    margin-left: 21px;
+}
+hr{
+    width: 190px;
+    margin-left: 21px;
+}
+.email{
+    height: 35px;
+    width: 200px;
+    /* border: 2px solid grey; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+}
+.icon {
+    display: flex;
+    margin-right: 5px;
+} 
+.email p{
+    margin-left: 3px;
+}
+.phone {
+    height:35px;
+    width: 200px;
+    /* border: 2px solid pink; */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: calibri;
+}
+.iicon {
+    display: flex;
+    margin-left: 13px;
+    /* color: black; */
+}
+.phone p{
+    margin: 5px;
+}
+/* MediaQueries */
+@media (max-width:500px){
+    .thefront {
+        padding-left: 0%;
+    }
+}
